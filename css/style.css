@@ -5,27 +5,35 @@
 html {
   font-size: 100%;
 }
-body{
-  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
-  line-height: 1.7;
-  color: #432;
+body {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
+
 a {
   text-decoration: none;
 }
 img {
   max-width: 100%;
 }
-h1 {
-  color: red;
+.container {
+  max-width: 1000px;
+	margin: 0 auto;
 }
-
-h2 {
-  color: blue;
+* {
+	margin: 0;
+	padding: 0;
 }
 
 /* ヘッダーについて */
-
+h1 {
+  background-image: url(../images/logo.png);
+  height: 270px;
+  margin-bottom: 40px;
+}
+ ul {
+  float: left;
+  
+}
 
 /*  フッター */
 footer {
@@ -36,4 +44,16 @@ footer {
 footer p {
   color: #fff;
   font-size: 0.8rem;
+}
+/*  メニュー --*/
+.grid {
+  display: flex;
+  justify-content: space-between; 
+}
+.item {
+  width: 27%;
+  height: 180px;
+  margin: 12px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
