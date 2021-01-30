@@ -78,3 +78,28 @@ footer p {
   -o-object-fit: cover;
   object-fit: cover;
 }
+/* アクセス */
+/* 店舗情報・地図 */
+#acces {
+  padding: 4% 0;
+}
+#acces .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.acces-info {
+  width: 22%;
+}
+.acces-info p {
+  padding: 12px 10px;
+}
+.acces-map {
+  width: 74%;
+}
+.sub-title {
+  font-size: 1.2rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px rgb(221, 52, 0) solid;
+  font-weight: normal;
+
+}
