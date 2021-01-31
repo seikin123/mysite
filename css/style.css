@@ -4,9 +4,22 @@
 ------------ */
 html {
   font-size: 100%;
+  background-color: #fff;
+}
+.header {
+  height: 150px;
 }
 body {
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  min-height: 100vh;
+  display: flex;
+  width: 1100px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1;
 }
 
 a {
@@ -17,13 +30,25 @@ img {
 }
 .container {
   max-width: 1000px;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 * {
 	margin: 0;
 	padding: 0;
 }
-
+.flex-container {
+  display: flex;
+}
+.sub-title {
+  border-bottom: 2px rgb(216, 65, 65) solid;
+}
+/* 子要素(アイテム) */
+.flex-item {
+	margin: 10px auto;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	color: #fff;
+}
 /* ヘッダーについて */
 .header-logo {
   width: 400px;
@@ -49,57 +74,51 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
 .wrapper {
   max-width:  1100px;
   margin: 0 auto;
   padding:  0 4%;
 }
-
-/*  フッター */
-footer {
-  background: rgb(184, 53, 20);
+/*---コンセプトについてーーー*/
+.concept-theme {
   text-align: center;
-  padding: 20px 0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.671);
+  margin: 10px;
+}
+/*  メニュー --*/
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px;
+}
+
+/* アクセス */
+/* 店舗情報・地図 */
+
+#access_map {
+float: none;
+width: 50%;
+}
+
+#access iframe {
+width: 100%;
+}
+/*---フッターについてーーー*/
+footer {
+  height: 30px;
+  background: brown;
+  text-align: center;
+  padding: 26px 0;
 }
 footer p {
   color: #fff;
-  font-size: 0.8rem;
 }
-/*  メニュー --*/
-.grid {
-  display: flex;
-  justify-content: space-between; 
-}
-.item {
-  width: 27%;
-  height: 180px;
-  margin: 12px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-/* アクセス */
-/* 店舗情報・地図 */
-#acces {
-  padding: 4% 0;
-}
-#acces .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-.acces-info {
-  width: 22%;
-}
-.acces-info p {
-  padding: 12px 10px;
-}
-.acces-map {
-  width: 74%;
-}
-.sub-title {
-  font-size: 1.2rem;
-  padding: 0 8px 8px;
-  border-bottom: 2px rgb(221, 52, 0) solid;
-  font-weight: normal;
 
+/*---メディアクエリ---*/
+@media screen and (max-width: 1100px) {
+  body {
+    width: 100%;
+    flex-direction: column;
+  }
 }
